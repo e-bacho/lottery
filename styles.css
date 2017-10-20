@@ -78,6 +78,11 @@ canvas
 	text-align: center;
 }
 
+#go
+{
+	width: 300px;
+}
+
 button
 {
 	height: 40px;
