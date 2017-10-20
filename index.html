@@ -1,0 +1,18 @@
+<link rel=StyleSheet href="styles.css" type="text/css" media=screen>
+<script type="text/javascript" src="script.js"></script>
+
+<div id="content">
+	<audio id="winSound">
+		<source src="cheering.mp3" type="audio/mpeg">
+	</audio>
+	<div id="participantsDiv">
+		<h3>Enter a List of Participants:</h3>
+		<textarea id="participantsInput"></textarea><br/><br/>
+		<button onclick="lottery.participantsEntered()">ENTER</button>
+	</div>
+	<div id="lottery">
+		<input id="winner" type="text" /><br/><br/>
+		<button id="go" onclick="lottery.drawWinner()">GO!</button>
+	</div>
+	<canvas id="canvas"></canvas>
+</div>
