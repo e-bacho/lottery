@@ -137,7 +137,6 @@ var lottery = (function(window){
 
 	function participantsEntered()
 	{
-		// participants = ['Ahmed', 'Amr', 'Ben Ingram', 'Boris Bachovski', 'Calvin N', 'Carl Thomas', 'Damien', 'Davey', 'Faisal Akhter', 'George Tsaousidis', 'Giridhar Bg', 'Jaydeep Makwana', 'Jeremy K.', 'Jernej', 'Jerry', 'Jesse', 'Karel Schuller', 'Keith Franks', 'Kristian Vegerano', 'Litao Shen', 'Mahalakshmi Tinagarane', 'Manuel Echeverria', 'Mike', 'Nick Guia', 'Nick Rangas', 'Owais Siddiqi', 'Paul Eric Victoriano', 'Renuka.R', 'Rorie', 'Satya sahoo', 'Shermal', 'Syed Muhammad Ali', 'velgoti', 'vignesh arunachalam', 'Wilson Ryan', 'Jodie', 'Nick Likane', 'Sam', 'Bharath'];
 		participants = participantsInput.value ? participantsInput.value.trim().split('\n').filter(function(n){ return (n != undefined && n != '') }) : [];
 		participantsDiv.style.display = 'none';
 		lotteryDiv.style.display = 'block';
