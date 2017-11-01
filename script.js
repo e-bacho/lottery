@@ -13,6 +13,7 @@ var lottery = (function(window){
 
 	var participants = [];
 	var elapsedTime = 0;
+	var drawDelay = 5000; // Milliseconds before a new winner is drawn
 	var interval = 100;
 	var W = window.innerWidth;
 	var H = window.innerHeight;
@@ -65,7 +66,7 @@ var lottery = (function(window){
 			winnerBox.value = participants[randomIndex];
 			elapsedTime += interval;
 
-			if (elapsedTime === 3000)
+			if (elapsedTime === drawDelay)
 			{
 				elapsedTime = 0;
 				participants.splice(randomIndex, 1);
